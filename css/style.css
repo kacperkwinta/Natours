@@ -56,6 +56,9 @@ body {
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
+
+  /* This determines if the back part of the element when we transform it is visible or hidden for the user*/
+  backface-visibility: hidden;
 }
 
 .heading-primary-main {
@@ -63,6 +66,7 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+  animation: moveInLeft 1s ease;
 }
 
 .heading-primary-sub {
@@ -70,4 +74,29 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.74rem;
+  animation: moveInRight 0.75s ease;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
 }
