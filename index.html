@@ -179,7 +179,7 @@
 				</div>
 			</section>
 
-			<section class="section-tours">
+			<section class="section-tours" id="section-tours">
 				<div class="u-center-text u-margin-bottom-big">
 					<h2 class="heading-secondary">Most popular tours</h2>
 				</div>
@@ -213,7 +213,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$297</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -247,7 +247,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$497</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -280,7 +280,7 @@
 										<p class="card__price-only">Only</p>
 										<p class="card__price-value">$697</p>
 									</div>
-									<a href="#" class="btn btn--white">Book now!</a>
+									<a href="#popup" class="btn btn--white">Book now!</a>
 								</div>
 							</div>
 						</div>
@@ -469,14 +469,17 @@
 			</div>
 		</footer>
 
-		<div class="popup">
+		<div class="popup" id="popup">
 			<div class="popup__content">
 				<div class="popup__left">
 					<img src="img/nat-8.jpg" alt="" class="popup__img" />
 					<img src="img/nat-9.jpg" alt="" class="popup__img" />
 				</div>
 				<div class="popup__right">
-					<h2 class="heading-secondary u-margin-bottom-small">Start booking now</h2>
+					<a href="#section-tours" class="popup__close">&times;</a>
+					<h2 class="heading-secondary u-margin-bottom-small">
+						Start booking now
+					</h2>
 					<h3 class="heading-tertiary u-margin-bottom-small">
 						Important &ndash; Please read these terms before booking
 					</h3>
@@ -487,7 +490,11 @@
 						Repellendus saepe sapiente nisi. Lorem ipsum dolor, sit amet
 						consectetur adipisicing elit. Autem, molestias? Earum quas in velit
 						reiciendis quis quo cumque quam qui quos facilis, consectetur
-						necessitatibus odio aut, iste praesentium tempora sed! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga consequatur saepe modi delectus repellat, ut consectetur voluptates doloribus? Dignissimos, quod. Porro dolorem voluptatem iure. Assumenda non delectus magni tenetur dolore.
+						necessitatibus odio aut, iste praesentium tempora sed! Lorem ipsum
+						dolor sit amet consectetur adipisicing elit. Fuga consequatur saepe
+						modi delectus repellat, ut consectetur voluptates doloribus?
+						Dignissimos, quod. Porro dolorem voluptatem iure. Assumenda non
+						delectus magni tenetur dolore.
 					</p>
 					<a href="#" class="btn btn--green">Book now</a>
 				</div>
